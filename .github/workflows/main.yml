@@ -14,10 +14,10 @@ jobs:
           node-version: "14"
 
       - name: Install deps
-        run: npm ci
+        run: make setup
 
       - name: Run tests
-        run: npm test
+        run: make test
 
       - name: Run lint
-        run: npx eslint .
+        run: make lint
